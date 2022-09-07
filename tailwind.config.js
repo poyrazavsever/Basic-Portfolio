@@ -5,11 +5,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        primary:"#F4EEFF",
-        secondary:"#DCD6F7",
-        tert:"#A6B1E1",
-        fourth:"#424874"
+      rotate : {
+        '360' : '360deg'
       }
     },
   },
