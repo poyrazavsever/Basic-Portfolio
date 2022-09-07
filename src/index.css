@@ -3,6 +3,22 @@
 @tailwind utilities;
 
 
+html{
+	scroll-behavior: smooth;
+}
+
+
+@layer base {
+
+	.contactInput{
+		@apply border border-red-400 w-full rounded-sm outline-red-500 px-4 py-2 text-sm mt-2
+	}
+
+	.inputBox{
+		@apply my-7;
+	}
+}
+
 ::-webkit-scrollbar {
 	width: 10px; /*genislik 10px olsun*/
 	background-color: #fedddd; /*scrollbar arkaplan renk*/
