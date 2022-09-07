@@ -30,20 +30,21 @@ export default function ContactSection() {
         <div className='w-full h-screen dark:bg-gray-800'>
             <div>
                 <div className='w-3/4 lg:w-1/2 mx-auto'>
-                    <h2 className='font-normal text-lg text-center pb-4 text-black dark:text-white rounded-sm'>
+                    <h2 className='font-normal text-2xl text-center pb-4 text-black dark:text-white rounded-sm'>
                         Contact <span className='text-red-400  font-medium'> with me.</span>
                     </h2>
+                    <br />
 
                     {   
                         res && (
                             res.status ?
                                 messageStatus === true ?
-                                 <div className='flex items-center justify-start gap-2 text-white'><AiOutlineMessage  className='animate-spin h-6 w-6'/> <span>Sending Message...</span></div> : <div className='bg-green-500  text-white px-6 py-2 w-full rounded'>
+                                 <div className='flex items-center justify-start gap-2 text-black dark:text-white'><AiOutlineMessage  className='animate-spin h-6 w-6'/> <span>Sending Message...</span></div> : <div className='bg-green-500  text-white px-6 py-2 w-full rounded'>
                                  {res.msg}
                              </div>
                                 :
                                 messageStatus === true ?
-                                <div className='animate-spin h-5 w-5'><span className='ml-3'>Sending Message...</span></div> :
+                                <div className='flex items-center justify-start gap-2 text-black dark:text-white'><AiOutlineMessage  className='animate-spin h-6 w-6'/> <span>Sending Message...</span></div> :
                                 <div className='bg-red-600  text-white px-6 py-2 w-full rounded'>
                                     {res.msg}
                                 </div>
