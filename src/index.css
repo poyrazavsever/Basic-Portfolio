@@ -11,22 +11,14 @@ html{
 @layer base {
 
 	.contactInput{
-		@apply border border-red-400 w-full rounded-sm outline-red-500 px-4 py-2 text-sm mt-2
+		@apply border border-red-400 dark:border-gray-200 w-full rounded-sm outline-red-500 dark:outline-none px-4 py-2 text-sm mt-2 bg-transparent dark:text-white dark:placeholder:text-gray-400
 	}
 
 	.inputBox{
 		@apply my-7;
 	}
-}
 
-::-webkit-scrollbar {
-	width: 10px; /*genislik 10px olsun*/
-	background-color: #fedddd; /*scrollbar arkaplan renk*/
-}
-::-webkit-scrollbar-thumb {
-	background-color: #ff7d7d; /*scrollbar renk*/
-	border-radius:15px; /*oval olsun*/
-}
-::-webkit-scrollbar-thumb:hover { /*tiklandiginda*/
-	background-color: #d35555;
+	.activeLink{
+		@apply text-base text-black rounded-sm bg-red-200 dark:bg-gray-300 px-2 py-1;
+	}
 }
